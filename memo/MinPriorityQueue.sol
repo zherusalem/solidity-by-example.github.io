@@ -34,6 +34,7 @@ library MinPriorityQueue {
     uint rightIndex = i.mul(2).add(2);
 
     // NOTE: choose left index if left value < min and left value == right value
+    // 注意：如果 左值<最小数 并且 左值==右值，则选择 left index
     if (leftIndex < self.length && self[leftIndex] < self[minIndex]) {
       minIndex = leftIndex;
     }
